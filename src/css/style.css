@@ -85,3 +85,143 @@ header {
   background-color: var(--color-white);
   border-radius: 1rem;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.main-section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text-area,
+.text-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cube {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0.5rem solid var(--color-primary);
+  animation: spin 2s ease 0s infinite normal none;
+}
+
+.text-main > h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--color-text-black);
+}
+
+.text-main > h1 > span {
+  text-decoration: 5px underline var(--color-secondary);
+}
+
+.text-main > p {
+  color: var(--color-text-gray);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.text-main span {
+  color: var(--color-primary);
+}
+
+.social-media-container {
+  position: absolute;
+  background-color: var(--color-primary30);
+  border-radius: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icon {
+  background-color: var(--color-white);
+  border-radius: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gmail-container {
+  top: 25%;
+  left: 55%;
+  width: 80px;
+  height: 80px;
+}
+
+.gmail-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.github-container {
+  top: 45%;
+  left: 54%;
+  width: 65px;
+  height: 65px;
+}
+.github-icon {
+  width: 54px;
+  height: 54px;
+}
+
+.linkedin-container {
+  top: 68%;
+  left: 58%;
+  width: 74px;
+  height: 74px;
+}
+
+.linkedin-icon {
+  width: 61px;
+  height: 61px;
+}
+
+.btn-download-cv {
+  width: 11.25rem;
+  padding: 1rem 0;
+  background-color: var(--color-primary);
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.btn-download-cv:hover {
+  transform: scale(1.1);
+  background-color: var(--color-primary-dark);
+}
+
+.main-image-area {
+  background: linear-gradient(
+    45deg,
+    rgba(89, 86, 233, 1) 50%,
+    rgba(255, 209, 9, 1) 50%
+  );
+  width: 480px;
+  height: 700px;
+  border-radius: 0 0 3rem 3rem;
+  position: absolute;
+  left: calc(100% - 480px);
+  top: -100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

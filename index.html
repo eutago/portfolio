@@ -8,19 +8,21 @@
   </head>
   <body>
     <div class="container">
+      <!----------- Header Section ----------->
       <header>
         <h1 class="logo">tago<span>Code</span></h1>
         <nav class="nav">
-          <a class="nav-item" href="#">Sobre</a>
-          <a class="nav-item" href="#">Habilidades</a>
-          <a class="nav-item" href="#">Serviços</a>
-          <a class="nav-item" href="#">Contato</a>
+          <a class="nav-item hover-link" href="#">Sobre</a>
+          <a class="nav-item hover-link" href="#">Habilidades</a>
+          <a class="nav-item hover-link" href="#">Serviços</a>
+          <a class="nav-item hover-link" href="#">Contato</a>
         </nav>
-        <button class="switchTheme">
-          <div class="ball"></div>
+        <button class="switch-theme">
+          <div class="ball-switch-theme"></div>
         </button>
       </header>
       <main>
+        <!----------- Main Section ----------->
         <section class="main-section">
           <div class="main-text-area">
             <div class="cube"></div>
@@ -51,7 +53,7 @@
                         fill="#4285F4"
                       />
                       <path
-                        d="M35.5915 31.9753L40.7771 30.1493C42.0068 29.7163 42.6486 28.3704 42.2169 27.1444L36.6085 11.2173L33.4414 14.8854L31.157 19.3818L35.5915 31.9753Z"
+                        d="M35.5915 31.91253L40.7771 30.1493C42.0068 29.7163 42.6486 28.3704 42.2169 27.1444L36.6085 11.2173L33.4414 14.8854L31.157 19.3818L35.5915 31.9753Z"
                         fill="#34A853"
                       />
                       <path
@@ -137,13 +139,111 @@
                 </div>
               </a>
             </div>
-            <button class="btn-download-cv">Download CV</button>
+            <button class="btn">Download CV</button>
+            <div class="floating-ball"></div>
+            <img src="./src/images/square1.png" class="square" />
           </div>
           <div class="main-image-area">
             <div class="background-yellow"></div>
           </div>
         </section>
+        <!----------- About Section ----------->
+        <section class="about-section">
+          <div class="about-image-area">
+            <img
+              src="./src/images/image-about.svg"
+              alt="imagem de alguns de meus serviços"
+            />
+          </div>
+          <div class="about-text-area">
+            <div class="title-section title-about">
+              <div class="line"></div>
+              <h3>Sobre mim</h3>
+            </div>
+            <div class="name-thiago">
+              <h1>Thiago Luiz</h1>
+            </div>
+            <p class="about-description">
+              Sou um Desenvolvedor Front-end extremamente <br />
+              detalhista e dedicado em suas tarefas, garantindo que <br />
+              o usuário tenha a melhor experiência possível e <br />
+              permanecendo uma ótima qualidade no <br />
+              funcionamento do código.
+            </p>
+            <div class="btn-links">
+              <button class="btn">Contate-me</button>
+              <a class="link-download-cv hover-link" href="#">Download CV</a>
+            </div>
+          </div>
+        </section>
+        <!----------- Skills Section ----------->
+        <section class="skills-section">
+          <div class="skills-container">
+            <div class="title-section title-skills">
+              <div class="line"></div>
+              <h3>Habilidades</h3>
+            </div>
+            <div class="skills-text-area">
+              <h1>Tenho conhecimento em</h1>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+                  vel perferendis natus beatae excepturi <br />
+                  asperiores, aliquid quisquam nisi? Fugit necessitatibus
+                  numquam corrupti, quibusdam odit culpa <br />
+                  maiores! Eos atque id at.
+                </p>
+                <button class="btn">Contate-me</button>
+              </div>
+            </div>
+            <div class="skills-wrapper">
+              <div class="skill">
+                <div class="sk-progress">
+                  <svg>
+                    <circle cx="125" cy="125" r="100" />
+                  </svg>
+                  <h2 class="counter"><span data-target="89">0</span>%</h2>
+                </div>
+                <div class="sk-title">HTML</div>
+              </div>
+
+              <div class="skill">
+                <div class="sk-progress">
+                  <svg>
+                    <circle cx="125" cy="125" r="100" />
+                  </svg>
+                  <h2 class="counter"><span data-target="79">0</span>%</h2>
+                </div>
+                <div class="sk-title">CSS</div>
+              </div>
+
+              <div class="skill">
+                <div class="sk-progress">
+                  <svg>
+                    <circle cx="125" cy="125" r="100" />
+                  </svg>
+                  <h2 class="counter"><span data-target="62">0</span>%</h2>
+                </div>
+                <div class="sk-title">JavaScript</div>
+              </div>
+
+              <div class="skill">
+                <div class="sk-progress">
+                  <svg>
+                    <circle cx="125" cy="125" r="100" />
+                  </svg>
+                  <h2 class="counter"><span data-target="30">0</span>%</h2>
+                </div>
+                <div class="sk-title">React.js</div>
+              </div>
+            </div>
+            <img src="./src/images/dots.png" class="shape dots" />
+            <img src="./src/images/square1.png" class="shape square" />
+          </div>
+        </section>
+        <!----------- Services Section ----------->
       </main>
     </div>
+    <script src="./src/script/app.js"></script>
   </body>
 </html>

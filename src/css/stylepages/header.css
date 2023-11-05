@@ -1,0 +1,80 @@
+/* Header Styles */
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  background-color: transparent;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.logo > span {
+  color: var(--color-primary);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: var(--color-text-black);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+  transition: all 90ms linear;
+}
+
+.hover-link::before {
+  content: "";
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top: calc(100% - 10px);
+  left: -5px;
+  width: 0;
+  height: 6px;
+  border-radius: 50px;
+  background-color: var(--color-secondary);
+  transition: all 90ms linear;
+}
+
+.hover-link:hover::before {
+  width: 100%;
+}
+
+.nav-item:hover {
+  color: var(--color-primary);
+}
+
+.switch-theme {
+  cursor: pointer;
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 50rem;
+  background-color: var(--color-primary);
+  padding: 0 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ball-switch-theme {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+}

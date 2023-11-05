@@ -1,0 +1,74 @@
+/* Services Section Styles */
+
+.services-section {
+  margin-top: 4rem;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  position: relative;
+}
+
+.title-services {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.cards-services {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.card-service {
+  height: 345px;
+  max-width: 300px;
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card-icon {
+  width: 64px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-black);
+}
+
+.card-description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-gray);
+  line-height: 1.5rem;
+}
+
+.circle {
+  width: 150px;
+}
+
+.services-section .circle {
+  width: 200px;
+  position: absolute;
+  top: 81%;
+  left: 10%;
+}
+
+.services-section .square {
+  width: 110px;
+  z-index: -1;
+  position: absolute;
+  top: 20%;
+  left: 83%;
+}

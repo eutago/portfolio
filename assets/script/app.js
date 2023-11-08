@@ -1,12 +1,12 @@
-const firstSkill = document.querySelector(".skill:first-child");
+/* --------------- Skills Progress Bar Animation --------------- */
+
+const firstSkill = document.querySelector(".skill");
 const skCounters = document.querySelectorAll(".counter span");
 const progressBars = document.querySelectorAll(".skill svg circle");
 
 window.addEventListener("scroll", () => {
   if (!skillsPlayed) skillsCounter();
 });
-
-/* --------------- Skills Progress Bar Animation --------------- */
 
 const hasReached = (element) => {
   let topPosition = element.getBoundingClientRect().top;

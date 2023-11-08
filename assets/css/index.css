@@ -1,11 +1,11 @@
-@import url("./globalStyles.css");
-@import url("./variables.css");
-@import url("./stylepages/header.css");
-@import url("./stylepages/main.css");
-@import url("./stylepages/about.css");
-@import url("./stylepages/skills.css");
-@import url("./stylepages/services.css");
-@import url("./animation.css");
+@import url("./global/globalStyles.css");
+@import url("./global/variables.css");
+@import url("./pages/index/partials/header.css");
+@import url("./pages/index/partials/main.css");
+@import url("./pages/index/partials/about.css");
+@import url("./pages/index/partials/skills.css");
+@import url("./pages/index/partials/services.css");
+@import url("./pages/index/partials/animation.css");
 
 @media screen and (max-width: 1280px) {
   .container {
